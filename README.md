@@ -1,4 +1,4 @@
-# ARMA Time Series Analysis
+# ARIMA Time Series Analysis
 
 A hands-on Jupyter notebook exploring **Autoregressive (AR)** and **Moving Average (MA)** models for time series analysis using Python.
 
