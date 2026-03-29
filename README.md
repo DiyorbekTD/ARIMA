@@ -1,18 +1,30 @@
 # ARMA Time Series Analysis
-
 A hands-on Jupyter notebook exploring **Autoregressive (AR)** and **Moving Average (MA)** models for time series analysis using Python.
 
 ## Overview
-
 This notebook walks through the simulation, visualization, and estimation of ARMA-family models, covering both synthetic data and real-world CSV datasets.
 
 ## Topics Covered
 
 - **AR(1) & AR(2) Models** — Manual simulation using recursive formulas and fitting with `statsmodels` ARIMA
+
+![AR1 Plot](images/ar1_plot.png)
+![AR2 Plot](images/ar2_plot.png)
+
 - **MA(1) & MA(2) Models** — Construction from white noise errors and parameter estimation
+
+![MA1 Plot](images/ma1_plot.png)
+![MA2 Plot](images/ma2_plot.png)
+
 - **`arma_generate_sample`** — Generating ARMA processes using `statsmodels.tsa.arima_process`
 - **ACF & PACF Plots** — Autocorrelation and Partial Autocorrelation analysis for model identification
+
+![ACF Plot](images/acf_plot.png)
+![PACF Plot](images/pacf_plot.png)
+
 - **Real Data Fitting** — Loading external CSV time series (`auto_1`, `auto_2`) and selecting appropriate AR/MA orders based on ACF/PACF patterns
+
+![Real Data Plot](images/real_data_plot.png)
 
 ## Dependencies
 ```bash
@@ -20,13 +32,11 @@ pip install numpy pandas matplotlib seaborn statsmodels
 ```
 
 ## Usage
-
 1. Clone the repo and place your `auto_1.csv` and `auto_2.csv` files in the working directory.
 2. (Optional) Add a `colorsetup.py` with custom `colors` and `palette` variables for styling.
 3. Run the notebook cell by cell to simulate, visualize, and fit ARMA models.
 
 ## Key Concepts
-
 | Model | AR params | MA params |
 |-------|-----------|-----------|
 | AR(1) | φ₁ = 0.7  | —         |
